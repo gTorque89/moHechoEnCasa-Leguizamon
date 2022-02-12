@@ -1,0 +1,523 @@
+*{
+    margin: 0% ;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*header / nav*/
+header{
+    height: 70px;
+    background: #f2a8fcb2;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-gap: 1.6em;
+    grid-template-columns: repeat (6, 1fr);
+    
+}
+.container > header,
+.container > .main-nuestros-productos,
+.container > .section-vid,
+.container > .fondo-servicios,
+.container > .section-comprar,
+.container > footer{
+    background-color: #eb96f7b2;
+    border: solid black;
+}
+.header-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.logo div{
+    justify-content: flex-start;
+    
+}
+/*header / accesos directos*/
+.accesos-directos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.carrito-icon {
+    width: 40px;
+}
+.instagram-icon{
+    width: 40px;
+
+}
+.facebook-icon{
+    width: 40px;
+}
+
+
+
+#btn-menu{
+    display: none;
+}
+header label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu ul{
+    color: #f2a8fcb2;
+    display: flex;
+    list-style: none;
+}
+.menu ul ul {
+    display: none;
+}
+
+.menu a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: #f2a8fc85;
+}
+.menu a span{
+    margin-left: 10px;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+.submenu{
+    background-color: #f2a8fcb2;
+    display:inline;
+
+}
+/*mediaq*/
+@media screen and (min-width:200px) and (max-width:845px) {
+    
+    header label{
+        display: block;
+    }
+    
+    .menu{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul{
+        display: block;
+        background: #f2a8fc85;
+    }
+    .menu ul li:hover ul{
+        display: none;
+    }
+
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+    h3{
+        font-size: 20px;
+    }
+    h2{
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .logo-servicios{
+        height: max-content;
+    }
+    .fondo-servicios{
+        background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
+        border-radius: 20px;
+    
+        justify-content: center;
+        text-align: center;
+    }
+    .instagram{
+        width: var(--icon-size);
+    }
+    .image-comprar{
+        width: fit-content;
+    }
+    .imagen{
+        width: fit-content;
+        align-items: flex-end;
+    }
+}
+
+
+/*root*/
+:root{
+    /*fuente*/
+    --font-family: 'garbata';
+    --font-size: 35px;
+    --font-color: rgba(206, 105, 253, 0.74);
+    /*botones*/
+    --color-button: #f2a8fcb2;
+    --icon-size: 120px;
+}
+    
+    
+
+/*fuentes*/
+@font-face{
+    font-family: 'garbata';
+    src:url(../font/garbata-trial-cufonfonts/GarbataTrial-Regular.ttf) ; 
+}
+
+.seccion-inicial{
+    align-content: center;
+}
+h2{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    margin: 50px;
+    font-size: 50px;
+    text-align: auto;
+    letter-spacing: 3px;
+    
+}
+a{
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+p{
+    font-family:'Montserrat', sans-serif;
+    color: var(--font-color);
+}
+h3{
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+/*colores*/
+body{background-color: rgba(248, 234, 245, 0.849);
+}
+
+
+/* boton */
+button {
+    --color-button: #f2a8fcb2;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color-button);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color-button);
+    margin:auto;
+    
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color-button);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #eb96f7b2;
+    transition: background 0s;
+   }
+   
+
+
+
+
+
+
+
+                    
+                    
+                    
+                           
+         
+/*footer*/
+
+.mohechoencasa{
+    width: 130px;
+    padding: 11px;
+            
+}
+.instagram{
+     width: 60px;
+            
+}
+.facebook{
+     width: 60px;
+}
+.maps{
+    width: 40px;
+}
+.phone{
+    width: 40px;
+}
+.gmail{
+    width: 40px;
+}
+
+
+.footer{
+    background-color: #f2a8fcb2;
+    padding: 100px;
+}
+/*pagina nuestros productos*/
+.fotos-nuestros-productos{
+    width: 300px;
+    margin: 20px;
+    
+    }
+.nuestros-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.descripcion-menu{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: violet;
+}
+/*seccion video*/
+.section-video{
+    background-color: #f2a8fc85;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 60px 40px;
+    justify-content: center;
+
+}
+.video{
+    width: 100%;
+}
+/*seccion servicios*/
+.fondo-servicios{
+    background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 60px 40px;
+    justify-content: center;
+    text-align: center;
+}
+.imagen{
+    width: 500px;
+    justify-content: end;
+    
+}
+/*seccion como comprar*/
+.descripcion-comprar{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: violet;
+    
+}
+.como-comprar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    padding-bottom: 40px;
+    }
+.div-area{
+    width: auto;
+}
+.image-comprar{
+    width: 500px;
+}
+/*imagenes*/
+.logo{
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    border-radius: 0%;
+    padding-top: 0%;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.pastas{
+    width: 350px;
+}
+.p-vegan{
+    width: 350px;
+}
+.p-tradicional{
+    width: 350px;
+}
+.nuestros-productos{
+    padding-bottom: 30px;
+}
+/*contactanos*/
+.formulario{
+    margin: 30px 80px 60px 80px;
+    padding: 50px;
+}
+
+/*galerias*/
+.nuestras-tortas{
+    align-items: center;
+}
+
+/*html servicios*/
+.servicios{
+    align-items: center;
+    size-adjust: auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.image-servicios{
+    max-width: 500px;
+}
+
+/*seccion rango de entrega*/
+.rango-entrega{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 0px; 
+  }
+
+
+
+
+/*mediaq*/
+@media screen and (min-width:200px) and (max-width:480px) {
+    header label{
+        display: block;
+        position: absolute;
+    }
+    
+    .menu{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul{
+        display: block;
+        background: #f2a8fc85;
+    }
+    .menu ul li:hover ul{
+        display: none;
+    }
+
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+    h3{
+        font-size: 50px;
+    }
+    h2{
+        font-family: var(--font-family);
+        color: var(--font-color);
+        font-size: 50px;
+        letter-spacing: 2px;
+        margin-left: 0%;
+    }
+    .logo-servicios{
+        height: max-content;
+    }
+    .fondo-servicios{
+        background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
+        border-radius: 20px;
+    
+        justify-content: center;
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+        padding: 0%;
+    }
+    .descripcion-menu{
+        font-size: 30px;
+    }
+    .parrafo{
+        font-size: 40px;
+    }
+    .descripcion-comprar{
+        font-size: 35px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .instagram {
+        width: var(--icon-size);
+    }
+    .facebook {
+        width: var(--icon-size);
+    }
+    .maps {
+        width: var(--icon-size);
+    }
+    .gmail {
+        width: var(--icon-size);
+    }
+    .phone {
+        width: var(--icon-size);
+    }
+    .section-video{
+        padding: 0%;
+    }
+    
+
+        
+    }
+}
+ 

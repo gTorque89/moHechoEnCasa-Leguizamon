@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="icon" href="../images/logos-y-marca/marca-mo.ico">
+    <title>Contactanos!</title>
+</head>
+<body class="container">
+  <!--Comienzo seccion menu-->
+  <header id="main-header" class="header-nav">
+      <div class="logo">
+          <i> <img src="../images/logos-y-marca/marca-mo.png" alt="logo"></i>
+      </div>
+      <div class="accesos-directos">
+          <div>
+              <i><a href="wwww.instagram.com/mohechoencasa" target="_blank">
+                  <img class="instagram-icon" src="../images/logos-y-marca/instagram.png" alt=""></a>
+              </i>
+          </div>
+          <div>
+              <i><a href="www.facebook.com/mohechoencasa" target="_blank">
+                  <img class="facebook-icon" src="../images/logos-y-marca/facebook.png" alt=""></a>
+              </i>
+          </div>
+          <div>
+              <i> <a href="#"><img class="carrito-icon" src="../images/logos-y-marca/cart.png" alt=""></a></i>
+          </div>
+      </div>
+      
+      <div>
+          <input type="checkbox" id="btn-menu">
+          <label for="btn-menu" class="icon-menu"></label>
+          <nav class="menu">
+              <ul>
+                  <li>
+                      <a href="../index.html">Home</a>
+                  </li>
+                  <li class="submenu">
+                      <a href="#">Nuestros productos <span class="icon-down-open"></span></a>
+                      <ul>
+                          <li><a href="../pages/pasteleria.html" #="">Pasteleria tradicional</a></li>
+                          <li><a href="pages/pasteleria-vegana.html" #="">Pasteleria vegana</a></li>
+                          <li><a href="pages/pastas-frescas.html" #="">Pastas frescas</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="../pages/rango-de-entrega.html">Rangos de entrega</a>
+                  </li>
+                  <li>
+                      <a href="../pages/servicios.html">Servicios</a>
+                  </li>
+                  <li>
+                      <a href="../pages/contacto.html">Contacto</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+      <!--Fin seccion menu-->
+  <!--Comienzo de formulario de contacto-->
+  <h2>Contactanos</h2>
+<section class="formulario">
+  <div class="imagen">
+    <img src="../images/images-menu/contact-us.svg" alt="contactenos">
+  </div>
+  <div id="after_submit">
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="name">Tu nombre:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+      </div>
+      <div class="row">
+        <label class="required" for="email">Tu email:</label><br />
+        <input id="email" class="input" name="email" type="email" value="" size="30" /><br />
+      </div>
+      <div class="row">
+        <label class="required" for="email">Tu numero de telefono:</label><br />
+        <input id="phone" class="input" name="phone" type="phone" value="" size="30" /><br />
+      </div> 
+      <div class="row">
+        <label class="required" for="message">Tu mensaje:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      </div>
+      <button class="button" type="submit" value="Enviar email">Enviar mail</button>
+    </form>
+  </div>
+  </section>
+    <!--Fin de formulario de contacto-->
+    <!--Comienzo Footer-->   
+  <footer>
+    <section class="footer">
+      <nav>
+        <h4>Copyright - Todos los derechos reservados</h4>
+          <p>Seguinos en nuestras <b>redes</b></p>
+            <a href="https://www.instagram.com/mohechoencasa" target="_blank">    
+              <img src="../images/logos-y-marca/instagram.png" alt="instagram" class="instagram">
+            </a>
+            <a href="https://www.facebook.com/mohechoencasa" target="_blank">
+              <img src="../images/logos-y-marca/facebook.png" alt="facebook" class="facebook">
+            </a>
+      </nav>
+      <div>    
+          <p>
+            <a href="rango-de-entrega.html">
+              <img src="../images/logos-y-marca/mapa.png" alt="direccion" class="maps">   
+            </a> 
+            <b>Diaz Velez 2600, Olivos, Buenos Aires</b>
+          </p>
+      </div>
+      <div>
+          <p>
+            <img src="../images/logos-y-marca/iphone.png" alt="telefono" class="phone"> <b>01160333649</b>
+          </p>
+      
+          <p>
+            <img src="../images/logos-y-marca/gmail.png" alt="email" class="gmail"> <a href="mailto:mopasteleria@gmail.com">möpasteleria@gmail.com</a>
+          </p>
+      </div>
+    </section>
+ </footer>
+    <!--Fin Footer-->
+</body>
+</html>
