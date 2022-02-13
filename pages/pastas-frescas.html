@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,56 +19,45 @@
 </head>
 <body class="container">
   <!--Comienzo seccion menu-->
-  <header id="main-header" class="header-nav">
-      <div class="logo">
-          <i> <img src="../images/logos-y-marca/marca-mo.png" alt="logo"></i>
+<nav class="navbar navbar-light" style="background-color: #f2a8fcb7;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logos-y-marca/marca-mo.png" alt="" style="width: 120px; border-radius: 0%;">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../pages/nuestros-productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nuestros productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="pasteleria.html">Pasteleria tradicional</a></li>
+              <li><a class="dropdown-item" href="pasteleria-vegana.html">Pasteleria vegana</a></li>
+              <li><a class="dropdown-item" href="pastas-frescas.html">Pastas frescas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rango-de-entrega.html">Rango de entrega</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
       </div>
-      <div class="accesos-directos">
-          <div>
-              <i><a href="https://www.instagram.com/mohechoencasa" target="_blank">
-                  <img class="instagram-icon" src="../images/logos-y-marca/instagram.png" alt=""></a>
-              </i>
-          </div>
-          <div>
-              <i><a href="https://www.facebook.com/mohechoencasa" target="_blank">
-                  <img class="facebook-icon" src="../images/logos-y-marca/facebook.png" alt=""></a>
-              </i>
-          </div>
-          <div>
-              <i> <a href="#"><img class="carrito-icon" src="../images/logos-y-marca/cart.png" alt=""></a></i>
-          </div>
-      </div>
-      
-      <div>
-          <input type="checkbox" id="btn-menu">
-          <label for="btn-menu" class="icon-menu"></label>
-          <nav class="menu">
-              <ul>
-                  <li>
-                      <a href="../index.html">Home</a>
-                  </li>
-                  <li class="submenu">
-                      <a href="#">Nuestros productos <span class="icon-down-open"></span></a>
-                      <ul>
-                          <li><a href="../pages/pasteleria.html" #="">Pasteleria tradicional</a></li>
-                          <li><a href="pages/pasteleria-vegana.html" #="">Pasteleria vegana</a></li>
-                          <li><a href="pages/pastas-frescas.html" #="">Pastas frescas</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a href="../pages/rango-de-entrega.html">Rangos de entrega</a>
-                  </li>
-                  <li>
-                      <a href="../pages/servicios.html">Servicios</a>
-                  </li>
-                  <li>
-                      <a href="../pages/contacto.html">Contacto</a>
-                  </li>
-              </ul>
-          </nav>
-      </div>
+    </div>
+  </nav>
   </header>
-      <!--Fin seccion menu-->
+  <!--Fin seccion menu-->
+<!-- Comienzo galeria -->
 <main>
     <section>
         <h2>Nuestras pastas caseras</h2>
@@ -113,6 +104,7 @@
     </section>
  </footer>
     <!--Fin Footer-->
-    
+    <!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
