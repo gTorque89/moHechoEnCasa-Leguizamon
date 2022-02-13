@@ -301,9 +301,7 @@ img {
 .nuestros-productos{
     padding-bottom: 30px;
 }
-.navbar-image{
-    border-radius: 0%;
-}
+
 /*contactanos*/
 .formulario{
     margin: 30px 80px 60px 80px;
@@ -315,6 +313,9 @@ img {
     width: 50%;
 }
 .nuestros-macarons{
+    width: 50%;
+}
+.pasteleria-vegana{
     width: 50%;
 }
 
