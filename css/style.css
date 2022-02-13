@@ -1,15 +1,22 @@
 *{
     margin: 0% ;
     padding: 0%;
-    box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*header / nav*/
-
+header{
+    height: 70px;
+    background: #f2a8fcb2;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .container{
     display: grid;
     grid-gap: 1.6em;
     grid-template-columns: repeat (6, 1fr);
+    
     
 }
 /*.container > header,
@@ -20,26 +27,30 @@
 .container > footer{
     border: solid black;  
 }*/
-
-    
-}
-/*header / accesos directos*/
-.accesos-directos{
+.header-nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
-.carrito-icon {
-    width: 40px;
+.logo div{
+    justify-content: flex-start;
+    
 }
-.instagram-icon{
-    width: 40px;
+/*tamaños fotos galeria*/
+
+.nuestras-tortas{
+    width: 600px;
+}
+.nuestros-macarons{
+    width: 600px;
 
 }
-.facebook-icon{
-    width: 40px;
+.pasteleria-vegana{
+    width: 600px;
 }
-
+.pastas-frescas{
+    width: 600px;
+}
 
 
 
@@ -85,6 +96,9 @@
     .imagen{
         width: fit-content;
         align-items: flex-end;
+    }
+    .parrafo{
+        font-size: 40px;
     }
 }
 
@@ -138,7 +152,7 @@ body{background-color: rgba(248, 234, 245, 0.849);
 
 
 /* boton */
-.button {
+.button-css {
     --color-button: #f2a8fcb2;
     font-family: inherit;
     display: inline-block;
@@ -159,7 +173,7 @@ body{background-color: rgba(248, 234, 245, 0.849);
     
    }
    
-   .button:before {
+   .button-css:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -169,27 +183,38 @@ body{background-color: rgba(248, 234, 245, 0.849);
     border-radius: 50%;
    }
    
-  .button:hover {
+   .button-css:hover {
     color: #fff;
    }
    
-   .button:before {
+   .button-css:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
    }
    
-   .button:hover:before {
+   .button-css:hover:before {
     top: -30px;
     left: -30px;
    }
    
-   .button:active:before {
+   .button-css:active:before {
     background: #eb96f7b2;
     transition: background 0s;
    }
    
 
+
+
+
+
+
+
+                    
+                    
+                    
+                           
+         
 /*footer*/
 
 .mohechoencasa{
@@ -213,6 +238,7 @@ body{background-color: rgba(248, 234, 245, 0.849);
 .gmail{
     width: 40px;
 }
+
 
 .footer{
     background-color: #f2a8fcb2;
@@ -245,7 +271,7 @@ body{background-color: rgba(248, 234, 245, 0.849);
 
 }
 .video{
-    width: 100%;
+    width: 90%;
 }
 /*seccion servicios*/
 .fondo-servicios{
@@ -259,8 +285,8 @@ body{background-color: rgba(248, 234, 245, 0.849);
 .imagen{
     width: 500px;
     justify-content: end;
-    
 }
+
 /*seccion como comprar*/
 .descripcion-comprar{
     text-align: center;
@@ -284,9 +310,17 @@ body{background-color: rgba(248, 234, 245, 0.849);
     width: 500px;
 }
 /*imagenes*/
+.logo{
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    border-radius: 0%;
+    padding-top: 0%;
+}
 img {
     object-fit: cover;
-    width:400px ;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 .pastas{
@@ -301,7 +335,6 @@ img {
 .nuestros-productos{
     padding-bottom: 30px;
 }
-
 /*contactanos*/
 .formulario{
     margin: 30px 80px 60px 80px;
@@ -310,16 +343,7 @@ img {
 
 /*galerias*/
 .nuestras-tortas{
-    width: 50%;
-}
-.nuestros-macarons{
-    width: 50%;
-}
-.pasteleria-vegana{
-    width: 50%;
-}
-.pastas-frescas{
-    width: 50%;
+    align-items: center;
 }
 
 /*html servicios*/
@@ -348,7 +372,36 @@ img {
 /*mediaq*/
 @media screen and (min-width:200px) and (max-width:480px) 
     {
+    header label{
+        display: block;
+        position: absolute;
+    }
     
+    .menu{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 50%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    .menu ul{
+        display: block;
+        background: #f2a8fc85;
+    }
+    .menu ul li:hover ul{
+        display: none;
+    }
+
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
     h3{
         font-size: 50px;
     }
@@ -406,7 +459,9 @@ img {
     .section-video{
         padding: 0%;
     }
-    
+    .parrafo{
+        font-size: 40px;
+    }
 
         
 }
