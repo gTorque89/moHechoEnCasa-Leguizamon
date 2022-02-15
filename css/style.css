@@ -126,7 +126,7 @@ header{
 }
 h2{
     font-family: var(--font-family);
-    color: var(--font-color);
+    color: black;
     margin: 50px;
     font-size: 50px;
     text-align: auto;
@@ -139,14 +139,14 @@ a{
 }
 p{
     font-family:'Montserrat', sans-serif;
-    color: var(--font-color);
+    color: black;
 }
 h3{
     font-family: var(--font-family);
     color: var(--font-color);
 }
 /*colores*/
-body{background-color: rgba(248, 234, 245, 0.849);
+body{background-color: white;
 
 }
 
