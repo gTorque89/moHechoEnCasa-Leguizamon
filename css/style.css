@@ -275,6 +275,9 @@ body{background-color: white;
 }
 .video{
     width: 90%;
+    border-style: double;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 /*seccion servicios*/
 .fondo-servicios{
