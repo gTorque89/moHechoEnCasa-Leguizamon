@@ -16,9 +16,8 @@ header{
     display: grid;
     grid-gap: 1.6em;
     grid-template-columns: repeat (6, 1fr);
-    
-    
 }
+
 /*.container > header,
 .container > .main-nuestros-productos,
 .container > .section-vid,
@@ -148,7 +147,10 @@ h3{
 }
 /*colores*/
 body{background-color: rgba(248, 234, 245, 0.849);
+
 }
+
+
 
 
 /* boton */
@@ -261,6 +263,7 @@ body{background-color: rgba(248, 234, 245, 0.849);
     font-size: 20px;
     color: violet;
 }
+
 /*seccion video*/
 .section-video{
     background-color: #f2a8fc85;
@@ -359,12 +362,7 @@ img {
 }
 
 /*seccion rango de entrega*/
-.rango-entrega{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 0px 0px; 
-  }
+
 
 
 
