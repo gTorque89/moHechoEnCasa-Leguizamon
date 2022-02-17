@@ -12,11 +12,7 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-.container{
-    display: grid;
-    grid-gap: 1.6em;
-    grid-template-columns: repeat (6, 1fr);
-}
+
 
 /*.container > header,
 .container > .main-nuestros-productos,
