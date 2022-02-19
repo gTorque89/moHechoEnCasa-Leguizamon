@@ -1,0 +1,83 @@
+{"version":3,"sourceRoot":"","sources":["../scss/components/_navBar.scss","../scss/style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;;;ACLH;EACG;EACA;EACA;EACA;EACA;EACA;;;AAEH;EACG","file":"style.css"}/*.container > header,
+    .container > .main-nuestros-productos,
+    .container > .section-vid,
+    .container > .fondo-servicios,
+    .container > .section-comprar,
+    .container > footer{
+        border: solid black;  
+    }*/
+    /*.header-nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }*/
+    .logo div{
+        justify-content: flex-start;
+        
+    }
+    /*mediaq*/
+
+
+    
+    
+    
+    
+    /*seccion rango de entrega*/
+    .rango-entrega{
+            grid-template-columns: 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+          }
+          
+    
+    
+        
+        
+    
+    
+    
+    .seccion-inicial{
+        align-content: center;
+    }
+    
+    
+    
+    
+    /*colores*/
+    body{background-color: white;
+    
+    }
+    
+    
+    
+    
+    
+       
+    
+    
+    
+    
+    
+    
+    
+                        
+                        
+                        
+                               
+             
+    
+    
+    
+    
+    
+    
+    /*seccion rango de entrega*/
+    
+    
+    
+    
+    
+    
+    
+     
