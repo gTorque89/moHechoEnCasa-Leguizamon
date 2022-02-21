@@ -28,6 +28,7 @@ h2{
     font-size: 50px;
     text-align: auto;
     letter-spacing: 3px;
+    padding-top: 20px;
 }
 h3{
     font-family: var(--font-family);
@@ -96,7 +97,19 @@ header{
     background: #eb96f7b2;
     transition: background 0s;
    }
-/*tamaños fotos galeria*/
+   /*carouseles*/
+   .slide{
+       margin-top: 10px;
+       margin-bottom: 10px;
+       max-width: 500px;
+       justify-content: center;
+   }
+   .slide img{
+       width: 500px;
+       justify-content: center;
+        
+   }
+/*tamaños fotos galeria
     
 .nuestras-tortas{
     width: 600px;
@@ -110,7 +123,7 @@ header{
 }
 .pastas-frescas{
     width: 600px;
-}
+}*/
 /*pagina nuestros productos*/
 .fotos-nuestros-productos{
     width: 300px;
@@ -349,22 +362,22 @@ img{
         
         /*tamaños fotos galeria*/
     
-        .nuestras-tortas{
-            width: 250px;
+        /*.nuestras-tortas{
+            width: 300px;
             padding-bottom: 10%;
         }
         .nuestros-macarons{
-            width: 250px;
+            width: 300px;
             padding-bottom: 10%;
         }
         .pasteleria-vegana{
-            width: 250px;
+            width: 300px;
             padding-bottom: 10%;
         }
         .pastas-frescas{
-            width: 250px;
+            width: 300px;
             padding-bottom: 10%;
-        }
+        }*/
         .formulario{
             margin: 0%;
             padding: 50px;
