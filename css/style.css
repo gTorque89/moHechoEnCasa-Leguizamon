@@ -101,11 +101,11 @@ header{
    .slide{
        margin-top: 10px;
        margin-bottom: 10px;
-       max-width: 500px;
+       max-width: 600px;
        justify-content: center;
    }
    .slide img{
-       width: 500px;
+       width: 600px;
        justify-content: center;
         
    }
