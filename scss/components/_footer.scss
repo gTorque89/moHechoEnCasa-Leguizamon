@@ -1,25 +1,71 @@
-.mohechoencasa{
-    width: 130px;
-    padding: 11px;
-            
-}
-.instagram{
-     width: 60px;
-            
-}
-.facebook{
-     width: 60px;
-}
-.maps{
-    width: 40px;
-}
-.phone{
-    width: 40px;
-}
-.gmail{
-    width: 40px;
-}
-.footer{
+footer{
     background-color: #f2a8fcb2;
     padding: 60px;
+    section{
+        nav{
+            h4{ 
+                @media screen and (max-width:480px){
+                    font-size: 20px;
+                    
+                }  
+            }
+            p{
+                font-family:'Montserrat', sans-serif;
+                color: black;
+
+                @media screen and (max-width:480px){
+                    font-size: 20px;
+                }
+            }
+            a{
+                img{
+                    width: 60px;
+                    @media screen and (max-width:480px){
+                        width: 70px;
+                        padding-bottom: 10%;
+                    } 
+                }
+            }
+            a{
+                img{
+                    width: 60px;
+                    @media screen and (max-width:480px){
+                        width: 70px;
+                        padding-bottom: 10%;
+                    }
+                }
+            }
+            p{
+                img{
+                    width: 40px;
+                    @media screen and (max-width:480px){
+                        width: 50px;
+                        padding-bottom: 10%;
+                    } 
+                }
+            }
+            p{
+                a{
+                    img{
+                        width: 40px;
+                        @media screen and (max-width:480px){
+                            width: 50px;
+                            padding-bottom: 10%;
+                        }
+                    }
+                }
+            }
+            p{
+                img{
+                    width: 40px;
+                    @media screen and (max-width:480px){
+                        width: 50px;
+                        padding-bottom: 10%;
+                    }
+                
+
+                }
+            }
+        }
+    }
 }
