@@ -1,0 +1,17 @@
+/*pagina nuestros productos*/
+.fotos-nuestros-productos{
+    width: 300px;
+    margin: 20px;
+    
+    }
+.nuestros-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.descripcion-menu{
+    text-align: center;
+    font-family: 'garbata';
+    font-size: 20px;
+    color: violet;
+}

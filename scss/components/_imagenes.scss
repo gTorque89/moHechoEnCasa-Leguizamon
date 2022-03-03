@@ -1,0 +1,28 @@
+@import '../base/mixin';
+/*imagenes*/
+.logo{
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    border-radius: 0%;
+    padding-top: 0%;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.pastas{
+    @include imagenes(350px);
+}
+.p-vegan{
+    @include imagenes(350px);
+}
+.p-tradicional{
+    @include imagenes(350px);
+}
+.nuestros-productos{
+    padding-bottom: 30px;
+    text-align: center;
+}

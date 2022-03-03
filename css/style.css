@@ -1,3 +1,11 @@
+/*header / nav*/
+header {
+  height: 70px;
+  background: #e9a9f1b2;
+  color: #fff;
+}
+
+/*footer*/
 footer {
   background-color: #f2a8fcb2;
   padding: 60px;
@@ -60,6 +68,219 @@ footer section nav p img {
     width: 50px;
     padding-bottom: 10%;
   }
+}
+
+/* boton especial*/
+.button-css {
+  --color-button: #f2a8fcb2;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color-button);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color-button);
+  margin: auto;
+}
+
+.button-css:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color-button);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.button-css:hover {
+  color: #fff;
+}
+
+.button-css:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.button-css:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.button-css:active:before {
+  background: #eb96f7b2;
+  transition: background 0s;
+}
+
+/*carouseles*/
+.slide {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 600px;
+  justify-content: center;
+}
+
+.slide img {
+  width: 600px;
+  justify-content: center;
+}
+
+/*seccion como comprar*/
+/*como comprar*/
+.como-comprar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  padding-bottom: 40px;
+  align-content: center;
+}
+
+.descripcion-comprar {
+  text-align: center;
+  font-family: "garbata";
+  font-size: 20px;
+  color: violet;
+}
+
+.image-comprar {
+  width: 500px;
+}
+
+.div-area {
+  width: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .image-comprar {
+    width: 250px;
+  }
+
+  .como-comprar {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    padding-bottom: 40px;
+    align-content: center;
+  }
+
+  .div-area {
+    width: auto;
+    justify-content: center;
+  }
+}
+/*seccion servicios*/
+.fondo-servicios {
+  background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 60px 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+.imagen {
+  width: 50%;
+  justify-content: center;
+}
+
+.image-contacto {
+  width: 70%;
+}
+
+/*contactanos*/
+.formulario {
+  margin: 30px 80px 60px 80px;
+  padding: 50px;
+}
+
+/*html servicios*/
+.servicios {
+  align-items: center;
+  size-adjust: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.image-servicios {
+  max-width: 500px;
+}
+
+/*seccion video*/
+.section-video {
+  background-color: #f2a8fc85;
+  border-radius: 20px;
+  padding-top: 2rem;
+  margin: 60px 40px;
+  justify-content: center;
+}
+
+.video {
+  width: 80%;
+}
+
+/*pagina nuestros productos*/
+.fotos-nuestros-productos {
+  width: 300px;
+  margin: 20px;
+}
+
+.nuestros-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.descripcion-menu {
+  text-align: center;
+  font-family: "garbata";
+  font-size: 20px;
+  color: violet;
+}
+
+/*imagenes*/
+.logo {
+  height: 60px;
+  display: flex;
+  justify-content: left;
+  border-radius: 0%;
+  padding-top: 0%;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.pastas {
+  width: 350px;
+}
+
+.p-vegan {
+  width: 350px;
+}
+
+.p-tradicional {
+  width: 350px;
+}
+
+.nuestros-productos {
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
