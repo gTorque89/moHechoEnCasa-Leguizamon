@@ -283,4 +283,18 @@ img {
   text-align: center;
 }
 
+@font-face {
+  font-family: "garbata";
+  src: url(../font/garbata-trial-cufonfonts/GarbataTrial-Regular.ttf);
+}
+h2 {
+  color: rgba(206, 104, 253, 0.74);
+  font-family: "garbata";
+}
+
+h1 {
+  color: rgba(209, 124, 248, 0.74);
+  font-family: "garbata";
+}
+
 /*# sourceMappingURL=style.css.map */
