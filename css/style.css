@@ -5,71 +5,180 @@ header {
   color: #fff;
 }
 
-/*footer*/
-footer {
-  background-color: #f2a8fcb2;
-  padding: 60px;
-}
-@media screen and (max-width: 480px) {
-  footer section nav h4 {
-    font-size: 20px;
-  }
-}
-footer section nav p {
-  font-family: "Montserrat", sans-serif;
-  color: black;
-}
-@media screen and (max-width: 480px) {
-  footer section nav p {
-    font-size: 20px;
-  }
-}
-footer section nav a img {
-  width: 60px;
-}
-@media screen and (max-width: 480px) {
-  footer section nav a img {
-    width: 70px;
-    padding-bottom: 10%;
-  }
-}
-footer section nav a img {
-  width: 60px;
-}
-@media screen and (max-width: 480px) {
-  footer section nav a img {
-    width: 70px;
-    padding-bottom: 10%;
-  }
-}
-footer section nav p img {
-  width: 40px;
-}
-@media screen and (max-width: 480px) {
-  footer section nav p img {
-    width: 50px;
-    padding-bottom: 10%;
-  }
-}
-footer section nav p a img {
-  width: 40px;
-}
-@media screen and (max-width: 480px) {
-  footer section nav p a img {
-    width: 50px;
-    padding-bottom: 10%;
-  }
-}
-footer section nav p img {
-  width: 40px;
-}
-@media screen and (max-width: 480px) {
-  footer section nav p img {
-    width: 50px;
-    padding-bottom: 10%;
-  }
+.footer-distributed {
+  background: #f2a8fcb2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: "garbata" 16px sans-serif;
+  padding: 55px 50px;
 }
 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "garbata", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: black;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+.icon-center {
+  color: #222;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  color: #33383b;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: violet;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* mediaq */
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
 /* boton especial*/
 .button-css {
   --color-button: #f2a8fcb2;
@@ -128,7 +237,6 @@ footer section nav p img {
   max-width: 600px;
   justify-content: center;
 }
-
 .slide img {
   width: 600px;
   justify-content: center;
@@ -144,6 +252,24 @@ footer section nav p img {
   grid-row-gap: 10px;
   padding-bottom: 40px;
   align-content: center;
+}
+
+h2 {
+  font-family: "garbata";
+  margin: 50px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 3px;
+  padding-top: 25px;
+}
+
+h1 {
+  font-family: "garbata";
+  margin: 50px;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 25px;
 }
 
 .descripcion-comprar {
@@ -229,6 +355,8 @@ footer section nav p img {
 
 .video {
   width: 80%;
+  padding-bottom: 2rem;
+  justify-content: center;
 }
 
 /*pagina nuestros productos*/
@@ -266,18 +394,6 @@ img {
   border-radius: 10px;
 }
 
-.pastas {
-  width: 350px;
-}
-
-.p-vegan {
-  width: 350px;
-}
-
-.p-tradicional {
-  width: 350px;
-}
-
 .nuestros-productos {
   padding-bottom: 30px;
   text-align: center;
@@ -295,6 +411,10 @@ h2 {
 h1 {
   color: rgba(209, 124, 248, 0.74);
   font-family: "garbata";
+}
+
+.parrafo {
+  color: #961c96;
 }
 
 /*# sourceMappingURL=style.css.map */
