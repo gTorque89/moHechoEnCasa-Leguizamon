@@ -1,16 +1,52 @@
 @import'../base/variables';
 h2{
-    color: hsla(281, 97%, 70%, 0.74);
+    color: $colorFuente;
     font-family: $fontfamily;
     @extend %h2;
 }
 h1{
-    color: hsla(281, 90%, 73%, 0.74);
+    color: $colorFuente;
     font-family: $fontfamily;
     @extend %h1;
 
 }
 .parrafo{
-    $fontfamily: 'garbata';
+    font-family: $fontfamily;
     color: rgb(150, 28, 150);
+}
+@media screen and (max-width:480px){
+    h3{
+        font-size: 2em;
+    }
+    h2{
+        color: $colorFuente;
+        font-family: $fontfamily;
+        @extend %h2;
+        font-size: 1em;
+        text-align: center;
+        margin: 5%;
+    }
+    .descripcion-menu{
+        font-size: 2em;
+    }
+    .parrafo{
+        font-size: 1em;
+    }
+    .descripcion-comprar{
+        font-size: 30px;
+    }
+}
+@media screen and  (max-width:930px) {
+        
+        
+    h3{
+        font-size: 20px;
+    }
+    h2{
+        font-family: $fontfamily;
+        color: $colorFuente;
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-align: center;
+    }
 }

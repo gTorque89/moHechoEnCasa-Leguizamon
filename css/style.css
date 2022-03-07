@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*header / nav*/
 header {
   height: 70px;
@@ -14,26 +15,26 @@ header {
   font: "garbata" 16px sans-serif;
   padding: 55px 50px;
 }
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
+.footer-distributed .footer-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+.footer-distributed .footer-center {
+  display: inline-block;
+  vertical-align: top;
+}
 .footer-distributed .footer-right {
   display: inline-block;
   vertical-align: top;
 }
 
-/* Footer left */
-.footer-distributed .footer-left {
-  width: 40%;
-}
-
-/* The company logo */
+/* mö pasteleria logo */
 .footer-distributed h3 {
   color: #ffffff;
   font: normal 36px "garbata", cursive;
   margin: 0;
 }
-
 .footer-distributed h3 span {
   color: black;
 }
@@ -44,7 +45,6 @@ header {
   margin: 20px 0 12px;
   padding: 0;
 }
-
 .footer-distributed .footer-links a {
   display: inline-block;
   line-height: 1.8;
@@ -52,7 +52,18 @@ header {
   text-decoration: none;
   color: inherit;
 }
-
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
 .footer-distributed .footer-company-name {
   color: #222;
   font-size: 14px;
@@ -68,7 +79,6 @@ header {
 .footer-distributed .footer-center {
   width: 35%;
 }
-
 .footer-distributed .footer-center i {
   color: #33383b;
   font-size: 25px;
@@ -80,12 +90,6 @@ header {
   margin: 10px 15px;
   vertical-align: middle;
 }
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
 .footer-distributed .footer-center p {
   display: inline-block;
   color: #ffffff;
@@ -93,38 +97,21 @@ header {
   vertical-align: middle;
   margin: 0;
 }
-
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
-
 .footer-distributed .footer-center p a {
   color: violet;
   text-decoration: none;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight: 300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
 }
 
 /* Footer Right */
 .footer-distributed .footer-right {
   width: 20%;
 }
-
 .footer-distributed .footer-company-about {
   line-height: 20px;
   color: black;
@@ -132,7 +119,6 @@ header {
   font-weight: normal;
   margin: 0;
 }
-
 .footer-distributed .footer-company-about span {
   display: block;
   color: #ffffff;
@@ -140,11 +126,9 @@ header {
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 .footer-distributed .footer-icons {
   margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a {
   display: inline-block;
   width: 35px;
@@ -166,17 +150,26 @@ header {
     font: bold 14px sans-serif;
   }
 
-  .footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
+  .footer-distributed .footer-left {
     display: block;
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
   }
-
+  .footer-distributed .footer-center {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   .footer-distributed .footer-center i {
     margin-left: 0;
+  }
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
   }
 }
 /* boton especial*/
@@ -199,7 +192,6 @@ header {
   color: var(--color-button);
   margin: auto;
 }
-
 .button-css:before {
   content: "";
   position: absolute;
@@ -209,7 +201,6 @@ header {
   width: 200px;
   border-radius: 50%;
 }
-
 .button-css:hover {
   color: #fff;
 }
@@ -306,6 +297,15 @@ h1 {
     width: auto;
     justify-content: center;
   }
+
+  .nuestros-productos {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image-comprar {
+    width: 250px;
+  }
 }
 /*seccion servicios*/
 .fondo-servicios {
@@ -316,8 +316,7 @@ h1 {
   justify-content: center;
   text-align: center;
 }
-
-.imagen {
+.fondo-servicios .imagen {
   width: 50%;
   justify-content: center;
 }
@@ -326,12 +325,40 @@ h1 {
   width: 70%;
 }
 
+@media screen and (max-width: 930px) {
+  .logo-servicios {
+    height: max-content;
+  }
+
+  .fondo-servicios {
+    background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .parrafo {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fondo-servicios {
+    justify-content: center;
+    text-align: center;
+  }
+}
 /*contactanos*/
 .formulario {
   margin: 30px 80px 60px 80px;
   padding: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .formulario {
+    margin: 0%;
+    padding: 50px;
+  }
+}
 /*html servicios*/
 .servicios {
   align-items: center;
@@ -339,8 +366,7 @@ h1 {
   text-align: center;
   padding-top: 10px;
 }
-
-.image-servicios {
+.servicios .image-servicios {
   max-width: 500px;
 }
 
@@ -352,32 +378,45 @@ h1 {
   margin: 60px 40px;
   justify-content: center;
 }
-
-.video {
+.section-video .video {
   width: 80%;
   padding-bottom: 2rem;
   justify-content: center;
 }
 
-/*pagina nuestros productos*/
-.fotos-nuestros-productos {
-  width: 300px;
-  margin: 20px;
+@media screen and (max-width: 480px) {
+  .section-video {
+    align-content: center;
+  }
 }
-
+/*pagina nuestros productos*/
 .nuestros-productos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
-.descripcion-menu {
+.nuestros-productos .fotos-nuestros-productos {
+  width: 300px;
+  margin: 20px;
+}
+.nuestros-productos .descripcion-menu {
   text-align: center;
   font-family: "garbata";
   font-size: 20px;
   color: violet;
 }
 
+@media screen and (max-width: 480px) {
+  .nuestros-productos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fotos-nuestros-productos {
+    width: 250px;
+    justify-content: center;
+  }
+}
 /*imagenes*/
 .logo {
   height: 60px;
@@ -399,6 +438,11 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 930px) {
+  .imagen-map {
+    flex-direction: column;
+  }
+}
 @font-face {
   font-family: "garbata";
   src: url(../font/garbata-trial-cufonfonts/GarbataTrial-Regular.ttf);
@@ -409,12 +453,52 @@ h2 {
 }
 
 h1 {
-  color: rgba(209, 124, 248, 0.74);
+  color: rgba(206, 104, 253, 0.74);
   font-family: "garbata";
 }
 
 .parrafo {
+  font-family: "garbata";
   color: #961c96;
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  h2 {
+    color: rgba(206, 104, 253, 0.74);
+    font-family: "garbata";
+    font-size: 1em;
+    text-align: center;
+    margin: 5%;
+  }
+
+  .descripcion-menu {
+    font-size: 2em;
+  }
+
+  .parrafo {
+    font-size: 1em;
+  }
+
+  .descripcion-comprar {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 930px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-family: "garbata";
+    color: rgba(206, 104, 253, 0.74);
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

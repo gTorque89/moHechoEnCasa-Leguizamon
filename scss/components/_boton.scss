@@ -18,20 +18,18 @@
     color: var(--color-button);
     margin:auto;
     
-   }
-   
-   .button-css:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color-button);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-   }
-   
-   .button-css:hover {
-    color: #fff;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: var(--color-button);
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+       }
+    &:hover {
+        color: #fff;
+       }
    }
    
    .button-css:before {

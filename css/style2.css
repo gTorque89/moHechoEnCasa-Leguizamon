@@ -261,90 +261,14 @@ img{
     max-width: 500px;
 }
 /*mediaq*/
-@media screen and (max-width:480px) { 
+ 
         
-        h3{
-            font-size: 2em;
-        }
-        h2{
-            font-family: var(--font-family);
-            color: var(--font-color);
-            font-size: 1em;
-            text-align: center;
-            margin: 5%;
-        }
+        
     
-        .fondo-servicios{
-            background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
-            border-radius: 20px;
-            justify-content: center;
-            text-align: left;
-        }
         
-        .descripcion-menu{
-            font-size: 2em;
-        }
-        .parrafo{
-            font-size: 1em;
-        }
-        .descripcion-comprar{
-            font-size: 30px;
-        }
-        /*footer*/
-        .footer{
-            padding: 0%;
-        }
-        h4{
-            font-size: 20px;
-        }
-        p{
-            font-size: 20px;
-        }
-        .instagram {
-            width: var(--icon-size);
-            padding-bottom: 10%;
-        }
-        .facebook {
-            width: var(--icon-size);
-            padding-bottom: 10%;
-        }
-        .maps {
-            width: 50px;
-            padding-bottom: 10%;
-        }
-        .gmail {
-            width: 50px;
-            padding-bottom: 10%;
-        }
-        .phone {
-            width: 50px;
-            padding-bottom: 10%;
-        }
-        .section-video{
-            
-            align-content: center;
-        }
-        .nuestros-productos{
-            flex-direction: column;
-            justify-content: center;
-        }
-        .image-comprar{
-            width: 250px;
-        }
-        .como-comprar{
-            display: grid;
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-columns: repeat(1, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 10px;
-            padding-bottom: 40px;
-            align-content: center;
-            }
-        .div-area{
-            width: auto;
-            justify-content: center;
-            
-        }
+        
+        
+        
         /*imagenes menu principal*/
         .fotos-nuestros-productos{
             width: 250px;
@@ -353,10 +277,7 @@ img{
         
         
 
-        .formulario{
-            margin: 0%;
-            padding: 50px;
-        }
+        
         body{
             background-color:#f7e3fab2;
         }
@@ -365,39 +286,6 @@ img{
         
             
 
-    @media screen and  (max-width:930px) {
-        
-        
-        h3{
-            font-size: 20px;
-        }
-        h2{
-            font-family: var(--font-family);
-            color: var(--font-color);
-            font-size: 2em;
-            letter-spacing: 2px;
-            text-align:center;
-        }
-        .logo-servicios{
-            height: max-content;
-        }
-        .fondo-servicios{
-            background-image: url(../images/fondo/fondo-rosa-pastel.jpg);
-            border-radius: 20px;
-        
-            justify-content: center;
-            text-align: center;
-        }
-        
-        .parrafo{
-            font-size: 30px;
-        }
-        .imagen-map{
-            flex-direction: column;
-        }
-
-        
-    }
 
 
 
