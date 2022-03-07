@@ -1,0 +1,56 @@
+/*footer*/
+footer{
+    background-color: #f2a8fcb2;
+    padding: 60px;
+    section{
+        nav{
+            h4{ 
+                @media screen and (max-width:480px){
+                    font-size: 20px;
+                    
+                }  
+            }
+            p{
+                font-family:'Montserrat', sans-serif;
+                color: black;
+
+                @media screen and (max-width:480px){
+                    font-size: 20px;
+                }
+            }
+            
+        }
+    }
+}
+.redes-left{
+    align-items: flex-start;
+}
+.redes-sociales{
+    justify-content: flex-start;
+    width: 60px;
+    padding-bottom: 5%;
+    @media screen and (max-width:480px){
+        width: 70px;
+        padding-bottom: 10%;
+    }
+}
+
+.contacto-right{
+    justify-content:flex-end;
+    align-content: flex-end;
+    
+}
+.contacto{
+    width: 40px;
+    align-items: center;
+    justify-content:right;
+    @media screen and (max-width:480px){
+        width: 50px;
+        padding-bottom: 10%;
+    }
+}
+
+
+
+
+
