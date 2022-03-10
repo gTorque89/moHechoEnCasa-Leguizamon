@@ -395,9 +395,9 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
-.nuestros-productos .fotos-nuestros-productos {
+.nuestros-productos .nuestros-productos--div {
   width: 300px;
-  margin: 20px;
+  margin: 30px;
 }
 .nuestros-productos .descripcion-menu {
   text-align: center;
@@ -433,9 +433,10 @@ img {
   border-radius: 10px;
 }
 
-.nuestros-productos {
+.nuestros-productos--div {
   padding-bottom: 30px;
   text-align: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 930px) {
