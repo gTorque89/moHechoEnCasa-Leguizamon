@@ -1,20 +1,26 @@
 /*seccion como comprar*/
 @import '../base/extend';
-
+.title{
+    justify-content: center;
+    align-items: center;
+    }
+.image-comprar{
+    @extend %widthImagenes;
+}
+    
 .como-comprar{
     @extend %comoComprar;
+    padding-top: 10%;
 }
-
+.div-area{
+    width: auto;
+    max-width: 150px;
+}
 .descripcion-comprar{
     @extend %descripcionComprar;
 }
 
-.div-area{
-    width: auto;
-}
-.image-comprar{
-    @extend %widthImagenes;
-}
+    
 @media screen and (max-width:480px){
     .image-comprar{
         width: 250px;
@@ -27,17 +33,19 @@
         grid-row-gap: 10px;
         padding-bottom: 40px;
         align-content: center;
+        justify-content: center;
+        padding-left: 100px;
         }
     .div-area{
         width: auto;
         justify-content: center;
-        
+        align-items: center;
     }
     .nuestros-productos{
         flex-direction: column;
         justify-content: center;
-    }
-    .image-comprar{
-        width: 250px;
+        
     }
 }
+    
+

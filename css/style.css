@@ -271,11 +271,21 @@ h1 {
 }
 
 .image-comprar {
-  width: 500px;
+  width: 450px;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+}
+
+.como-comprar {
+  padding-top: 10%;
 }
 
 .div-area {
   width: auto;
+  max-width: 150px;
 }
 
 @media screen and (max-width: 480px) {
@@ -291,20 +301,19 @@ h1 {
     grid-row-gap: 10px;
     padding-bottom: 40px;
     align-content: center;
+    justify-content: center;
+    padding-left: 100px;
   }
 
   .div-area {
     width: auto;
     justify-content: center;
+    align-items: center;
   }
 
   .nuestros-productos {
     flex-direction: column;
     justify-content: center;
-  }
-
-  .image-comprar {
-    width: 250px;
   }
 }
 /*seccion servicios*/
@@ -379,10 +388,12 @@ h1 {
   margin: 60px 40px;
   justify-content: center;
 }
-.section-video .video {
+.section-video .video--div {
+  align-content: center;
+}
+.section-video .video--div .video {
   width: 80%;
-  padding-bottom: 2rem;
-  justify-content: center;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 480px) {
