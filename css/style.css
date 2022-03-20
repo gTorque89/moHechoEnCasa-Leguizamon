@@ -374,10 +374,15 @@ h1 {
   size-adjust: auto;
   text-align: center;
   padding-top: 20px;
-  padding-top: 20px;
 }
 .servicios .image-servicios {
   max-width: 500px;
+  border-radius: 50%;
+}
+.servicios .image-servicios-bottom {
+  max-width: 500px;
+  padding-bottom: 20px;
+  border-radius: 50%;
 }
 
 /*seccion video*/
