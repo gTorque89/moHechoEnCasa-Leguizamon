@@ -394,7 +394,7 @@ h1 {
   justify-content: center;
 }
 .section-video .video--div {
-  align-content: center;
+  justify-content: center !important;
 }
 .section-video .video--div .video {
   width: 80%;
