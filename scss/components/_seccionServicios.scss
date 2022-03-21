@@ -8,8 +8,9 @@
     text-align: center;
     
     .imagen{
-        width: 50%;
+        width: 40%;
         justify-content: center;
+        padding-bottom: 5%;
     }
 }
 .image-contacto{
@@ -26,7 +27,8 @@
         text-align: center;
     }
     .parrafo{
-        font-size: 30px;
+        font-size: 20px;
+        
     }
 }
 @media screen and (max-width:480px){

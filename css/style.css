@@ -251,7 +251,7 @@ h2 {
   font-size: 40px;
   text-align: center;
   letter-spacing: 3px;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 h1 {
@@ -326,8 +326,9 @@ h1 {
   text-align: center;
 }
 .fondo-servicios .imagen {
-  width: 50%;
+  width: 40%;
   justify-content: center;
+  padding-bottom: 5%;
 }
 
 .image-contacto {
@@ -347,7 +348,7 @@ h1 {
   }
 
   .parrafo {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -397,8 +398,10 @@ h1 {
   justify-content: center !important;
 }
 .section-video .video--div .video {
-  width: 80%;
+  max-width: 80%;
   padding: 2rem;
+  margin-left: 10%;
+  justify-content: center !important;
 }
 
 @media screen and (max-width: 480px) {
@@ -415,6 +418,9 @@ h1 {
 .nuestros-productos .nuestros-productos--div {
   width: 300px;
   margin: 30px;
+}
+.nuestros-productos .image-menu {
+  border-radius: 20%;
 }
 .nuestros-productos .descripcion-menu {
   text-align: center;

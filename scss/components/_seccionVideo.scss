@@ -11,9 +11,11 @@
         justify-content: center !important;
         
         .video{
-            width: 80%;
+            max-width: 80%;
             padding: 2rem;
-            
+            margin-left: 10%;
+            justify-content: center !important;
+           
         }
     }
     
