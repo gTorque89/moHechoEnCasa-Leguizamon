@@ -1,0 +1,31 @@
+.que-usamos{
+
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        
+        .card{
+            background-color: violet;
+            .card-text{
+                color: white;
+                font-family: 'garbata';
+            }
+            .card-list{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                list-style: square;
+            }
+        }
+    }
+    .logo-organico{
+        max-width: 300px;
+    }
+    @media screen and (max-width:840px){
+        .cards{
+            margin: 15px !important;
+            .card{
+                margin: 15px !important; 
+            }
+        }
+        
+    }
+}
