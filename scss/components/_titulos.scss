@@ -22,15 +22,15 @@ h1{
         color: $colorFuente;
         font-family: $fontfamily;
         @extend %h2;
-        font-size: 1em;
+        font-size: 1rem;
         text-align: center;
         margin: 5%;
     }
     .descripcion-menu{
-        font-size: 2em;
+        font-size: 2rem;
     }
     .parrafo{
-        font-size: 1em;
+        font-size: 1rem;
     }
     .descripcion-comprar{
         font-size: 30px;
