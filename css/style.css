@@ -172,6 +172,21 @@ header {
     text-align: center;
   }
 }
+.footer2 {
+  background-color: #020202;
+}
+.footer2 .footer-image {
+  width: 660px;
+}
+.footer2 .footer-text {
+  justify-content: center;
+  align-content: center;
+}
+.footer2 h5 {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 /* boton especial*/
 .button-css {
   --color-button: #f2a8fcb2;
