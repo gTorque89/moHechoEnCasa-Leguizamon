@@ -262,7 +262,7 @@ header {
 
 h2 {
   font-family: "garbata";
-  margin: 50px;
+  margin: 20px;
   font-size: 40px;
   text-align: center;
   letter-spacing: 3px;
@@ -271,7 +271,7 @@ h2 {
 
 h1 {
   font-family: "garbata";
-  margin: 50px;
+  margin: 40px;
   font-size: 50px;
   text-align: center;
   letter-spacing: 2px;
@@ -341,7 +341,7 @@ h1 {
   text-align: center;
 }
 .fondo-servicios .imagen {
-  width: 40%;
+  width: 50%;
   justify-content: center;
   padding-bottom: 5%;
 }
